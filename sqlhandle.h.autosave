@@ -1,7 +1,7 @@
 #ifndef SQLHANDLE_H
 #define SQLHANDLE_H
 
-#define IS_USE_QSTRING 1
+#define SQLHANDLE_USE_QSTRING 1
 
 #include <QWidget>
 #include <QFile>
@@ -21,7 +21,7 @@ public:
     ~SqlHandle();
 
     static bool ExecuteNonQuery(QString sql, QVariantList params);
-#if IS_USE_QSTRING
+#if SQLHANDLE_USE_QSTRING
     static QList<QString> ExcuteScalar(QString sql, QVariantList params);
     static QList<QList<QString>> ExcuteDataSet(QString sql, QVariantList params);
 #else

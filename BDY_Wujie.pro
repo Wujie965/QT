@@ -27,11 +27,15 @@ CONFIG += c++11
 SOURCES += \
         main.cpp \
         mainwindow.cpp \
-    sqlhandle.cpp
+    sqlhandle.cpp \
+    thread.cpp \
+    socket.cpp
 
 HEADERS += \
         mainwindow.h \
-    sqlhandle.h
+    sqlhandle.h \
+    thread.h \
+    socket.h
 
 FORMS += \
         mainwindow.ui

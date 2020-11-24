@@ -5,9 +5,11 @@
 
 class TestThread:  public QWidget{
     Q_OBJECT
+
 public:
     TestThread(QWidget* parent = nullptr);
     ~TestThread();
+
 private:
 };
 
